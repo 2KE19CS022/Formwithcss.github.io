@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSIGNMENTFORM</title>
+    <style>
+      #fe1 {
+        background-color: bisque;
+        border: 2px solid black;
+        width: 50%;
+        border-radius: 15px;
+        margin: auto;
+      }
+      #leg1 {
+        color: orangered;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+      }
+      .label {
+        color: blueviolet;
+        font-family: "Times New Roman", Times, serif;
+      }
+      #submit:hover {
+        background-color: rgb(240, 112, 112);
+      }
+      #submit {
+        margin: auto;
+        display: block;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="message.html">
+      <fieldset id="fe1">
+        <legend id="leg1">Personal Details</legend>
+        <label for="fname" class="label">First Name</label>
+        <input
+          type="text"
+          name="name"
+          id="fname"
+          required
+          pattern="[A-Za-z]{3,10}"
+          placeholder="Ex:chaithra"
+        /><br /><br />
+        <label for="mname" class="label">Middle Name</label>
+        <input type="text" name="name" id="mname" /><br /><br />
+        <label for="lname" class="label">Last Name</label>
+        <input type="text" name="name" id="lname" /><br /><br />
+        <label for="email" class="label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Ex:chaithra@gmail.com"
+        /><br /><br />
+        <label for="dob" class="label">DOB</label>
+        <input type="date" name="dob" id="dob" /><br /><br />
+        <label for="contact" class="label">Contact</label>
+        <input
+          type="tel"
+          required
+          id="contact"
+          name="name"
+          pattern="[6-9][0-9]{0,}"
+          placeholder="64236426543"
+        />
+      </fieldset>
+
+      <fieldset id="fe1">
+        <legend id="leg1">Course Details</legend>
+        <label for="" class="label">Department</label><br /><br />
+
+        <input type="radio" name="dept" id="cs" />
+        <label for="cs">CS</label>
+
+        <input type="radio" name="dept" id="civil" />
+        <label for="civil">CIVIL</label>
+
+        <input type="radio" name="dept" id="mech" />
+        <label for="mech">MECHANICAL</label>
+        <br /><br />
+        <label for="yop" class="label">Year Of Graduation</label>
+        <input list="yog" name="yop" id="yop" />
+        <datalist id="yog">
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+        </datalist>
+        <br /><br />
+        <label for="" class="label">Skills</label><br /><br />
+        <input type="checkbox" name="skill" id="java" />
+        <label for="java">JAVA</label> <br /><br />
+
+        <input type="checkbox" name="skill" id="sql" />
+        <label for="sql">SQL</label><br /><br />
+
+        <input type="checkbox" name="skill" id="html" />
+        <label for="html">HTML</label><br /><br />
+
+        <input type="checkbox" name="skill" id="css" />
+        <label for="css">CSS</label><br /><br />
+
+        <input type="checkbox" name="skill" id="javascript" />
+        <label for="javascript">JAVASCRIPT</label><br />
+        <br />
+      </fieldset>
+
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
